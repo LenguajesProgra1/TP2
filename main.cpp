@@ -1,13 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
-
-using namespace std;
+#include "predicados.h"
+#include <cstdlib>
 
 int main ()
 {
+	system("clear");
     // bienvenida al usuario en consola
-    cout<< "----------Bienvenido al interprete de Prolog----------\n *Si desea crear un hecho debe escribir <define> y para terminar debe escribir </define>.\n *Si desea realizar una consulta solamente ingresela.\n";
+    cout<< "----------Bienvenido al interprete de Prolog----------\n *Si desea crear un hecho debe escribir <define> \n *Para terminar el proceso de creacion se escribe </define>.\n *Si desea realizar una consulta solamente ingresela.\n";
 
     ifstream archivo("bc.txt");//busca el archivo txt y lo lee
     char linea[12];
@@ -24,5 +25,6 @@ int main ()
     }
     else
         cout<< "Error al abrir el archivo";
+	validarPredicado();
 }
-      
+
