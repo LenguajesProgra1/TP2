@@ -3,8 +3,7 @@
 #include<iostream>
 #include<fstream>
 #include<ctype.h>
-
-using namespace std;
+#include"predicados.h"
 
 int validarPredicado()
 {
@@ -17,7 +16,7 @@ int validarPredicado()
 	{
 		cout << "?- " ;
 		cin.getline(valido,100);
-		if(strcmp (inicio,(tolower(valido)))==0)
+		if(strcmp (inicio,valido)==0)
 		{
 			cin.getline(predicado,100);
 			while (strcmp (fin,predicado)!=0)
