@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp predicados.cpp -o main
+	g++ main.cpp predicados.cpp consultas.cpp -o main
