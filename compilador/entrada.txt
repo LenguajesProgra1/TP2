@@ -1,0 +1,3 @@
+Isperro(garfield).
+Isperro(X):-cuatroPatas(X).
+
